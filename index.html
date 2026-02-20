@@ -1,40 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Simple Shop</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>My Shop</h1>
-    <div id="cart" onclick="toggleCart()">
-      🛒 Cart: <span id="cart-count">0</span>
-      <div id="cart-items" class="hidden"></div>
-    </div>
-  </header>
+<h1>Online Book Store</h1>
 
-  <main class="products">
-    <div class="product">
-      <h2>T-Shirt</h2>
-      <p>$20</p>
-      <button onclick="addToCart('T-Shirt', 20)">Add to Cart</button>
+<div style="display:flex;">
+
+    <div class="menu">
+        <a href="login.html" target="frame">Login</a>
+        <a href="web.html" target="frame">Catalogue</a>
+        <a href="reg.html" target="frame">Register</a>
     </div>
 
-    <div class="product">
-      <h2>Shoes</h2>
-      <p>$50</p>
-      <button onclick="addToCart('Shoes', 50)">Add to Cart</button>
-    </div>
+    <iframe name="frame" width="500" height="300"></iframe>
 
-    <div class="product">
-      <h2>Watch</h2>
-      <p>$80</p>
-      <button onclick="addToCart('Watch', 80)">Add to Cart</button>
-    </div>
-  </main>
+</div>
 
-  <script src="script.js"></script>
 </body>
 </html>
